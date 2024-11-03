@@ -70,7 +70,7 @@ def setup_database(db_file, table_name):
             race TEXT,
             gender TEXT,
             income TEXT,
-            interest TEXT,
+            interest TEXT
             PRIMARY KEY (model_name, trial, race, gender, income, interest)
         )
     ''')
