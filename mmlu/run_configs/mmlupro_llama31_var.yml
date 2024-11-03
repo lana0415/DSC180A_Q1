@@ -1,0 +1,29 @@
+experiment_name: "mmlupro_prompt_var_llama31_instruct"
+dataset:
+  repo_id: "TIGER-Lab/MMLU-Pro"
+  subfolder: "data"
+  filename: "test-00000-of-00001.parquet"
+#  subset: 100
+num_gpu: 1
+models:
+  - name: "llama3.1:8b-instruct-q4_K_M"
+    provider: "ollama"
+pre_conditions:
+  - text: "Answer with only a single letter. The following are multiple choice questions (with answers)."
+    descriptor: "answer_only_mmlu_orig"
+  - text: "The following are multiple choice questions (with answers). Answer with only a single letter. "
+    descriptor: "answer_only_mmlu_orig_invert"
+  - text: "Please answer this multiple choice question (with answers) with only a single letter."
+    descriptor: "please_answer_mc_with_answers"
+  - text: "Please answer this multiple choice question with only a single letter of the correct answer."
+    descriptor: "please_answer_mc"
+  - text: "Here is a multiple choice question, with possible answers. Answer with only the letter of the correct answer."
+    descriptor: "here_is_mc_four_possible"
+  - text: "I am giving you a multiple choice question (with answers). Answer only with the single letter of the correct answer."
+    descriptor: "first_person_answer_only"
+post_conditions:
+  - text: "\nAnswer: "
+    descriptor: "answer"
+  - text: " "
+    descriptor: "blank"
+table_name: "results"

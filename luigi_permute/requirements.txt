@@ -1,0 +1,10 @@
+ollama>=0.3.3
+pandas>=2.2.2
+pyarrow>=17.0.0
+fastparquet>=2024.5.0
+huggingface-hub>=0.25.1
+tqdm>=4.66.5
+pyYAML>=6.0.2
+numpy<2
+pybind11>=2.12
+luigi>=3.5.2
