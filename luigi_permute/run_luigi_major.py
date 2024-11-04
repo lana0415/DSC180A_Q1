@@ -191,7 +191,7 @@ class RunExperimentTask(luigi.Task):
             INSERT OR IGNORE INTO {table_name} (
                 timestamp, experiment_name, model_name, provider, trial, prompt, response,
                 race, gender, income, interest
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             '''
             cursor.execute(insert_query, data)
             conn.commit()
