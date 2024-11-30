@@ -1,5 +1,8 @@
 # DSC180A Quarter 1 Checkpoint
 
+Enviroment:
+- May need a different python environment to work with argparse and luigi if recreating Q1_checkoint in particular 
+
 Folders given by mentor:
 - `luigi_permute`: Ollama and luigi-based orchestration for single-prompt permutation experiments
 
