@@ -52,6 +52,7 @@ dependencies:
   - seaborn=0.13.2
   - setuptools=72.1.0
   - six=1.16.0
+  - statsmodels=0.14.4
   - sqlite=3.45.3
   - tbb=2021.8.0
   - tk=8.6.14
