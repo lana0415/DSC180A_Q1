@@ -1,5 +1,7 @@
 # Hourly Wage for Babysitters ChatGBT-4o-mini Audit
 
+`Environment.yml` required package dependencies
+
 Folders:
 - `wage_audit` folder contains necessary notebooks and files to complete an audit
    - `input_data` contains jsonl files to be submited to BatchWizard for processing
